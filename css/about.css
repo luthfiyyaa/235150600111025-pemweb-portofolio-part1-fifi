@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Mengisi tinggi penuh layar */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFEFEF;
+    padding-top: 70px; /* Ensure content is below the fixed navbar */
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: auto;
+    background-color: #F5EEE6;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 80px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: auto; /* Menyesuaikan ukuran logo */
+    height: 70px;
+    vertical-align: middle; /* Agar logo sejajar dengan teks */
+    margin-right: 30px; /* Memberi jarak antara logo dan teks */
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center; /* Menyelaraskan gambar dan teks secara vertikal */
+}
+
+/* Navigation links for desktop */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+    font-weight: 600;
+}
+
+.nav-links li {
+    margin-left: 20px;
+    margin: 0;
+}
+
+/* Links style */
+.nav-links a {
+    color: #E6A4B4;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 14px 16px;
+    transition: background-color 0.3s, color 0.3s;
+    float: left;
+    display: block;
+    text-align: center;
+}
+
+/* Hover effects */
+.nav-links a:hover {
+    background-color: #E6A4B4;
+    color: #F3D7CA;
+    border-radius: 5px;
+}
+
+.nav-links a.active {
+    background-color: #E6A4B4;
+    color : #F7B5CA;
+}
+
+.nav-links .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-links a:not(:first-child){display: none;}
+    .nav-links a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .nav-links.responsive {position: relative;}
+    .nav-links.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav-links.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* Hamburger icon for mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #E6A4B4;
+    margin: 4px;
+    transition: 0.3s;
+}
+
+/* Mobile menu */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #F5EEE6;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+.head{
+    color:#E6A4B4;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'GFS Didot', serif;
+}
+
+.quote {
+    font-size: 16px;
+    color: #ff69b4;
+    margin: 20px 0;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .head {
+        font-size: 30px;
+        align-items: center;
+    }
+
+    .about-me {
+        font-size: 13px;
+        margin: 10px;
+    }
+
+    .quote {
+        font-size: 13px;
+    }
+}
+
+footer {
+    background-color: #F5EEE6;
+    color: #E6A4B4;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between; /* Membuat jarak antara copyright dan social icons */
+    align-items: center;
+    height: 50px;
+    position: relative;
+    z-index: 10;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-copyright {
+    margin: 0;
+    font-size: 15px;
+    color: #d896a9; /* Warna copyright sesuai contoh gambar */
+}
+
+.social-foot {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.social-foot:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+@media (max-width: 600px) {
+    .social-foot{
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-copyright {
+        font-size: 10px;
+    }
+}
