@@ -253,7 +253,18 @@ body {
     font-family: 'GFS Didot', serif;
     font-weight: bold;
     color: #ff69b4;
+    position: relative;
+    display: inline-block;
     overflow: hidden;
+    border-right: 2px solid #E6A4B4; /* Garis seperti kursor */
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes blink {
+    0% { visibility: visible; }
+    50% { visibility: hidden; } /* Teks hilang */
+    100% { visibility: visible; } /* Teks muncul kembali */
 }
 
 /* Konten gambar */

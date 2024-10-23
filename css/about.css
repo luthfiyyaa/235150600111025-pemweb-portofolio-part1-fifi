@@ -22,6 +22,7 @@ body {
     align-items: center;
     min-height: 100vh;
     padding-top: 80px;
+    flex: 1;
 }
 
 /* Navbar container */
@@ -200,7 +201,7 @@ footer {
     justify-content: space-between; /* Membuat jarak antara copyright dan social icons */
     align-items: center;
     height: 50px;
-    position: relative;
+    position: absolute;
     z-index: 10;
     bottom: 0;
     width: 100%;
