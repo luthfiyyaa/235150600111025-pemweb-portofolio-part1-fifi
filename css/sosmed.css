@@ -163,9 +163,17 @@ body {
 }
 
 .head{
-    color:#FFF8E3;
+    color:#F5EEE6;
     font-size: 50px;
     font-family: 'GFS Didot', serif;
+    align-items: center;
+}
+
+.heady{
+    color:#d896a9;
+    font-size: 50px;
+    font-family: 'GFS Didot', serif;
+    align-items: center;
 }
 
 .sosmed {
@@ -225,10 +233,7 @@ body {
     }
 }
 
-.sos-container {
-    /* background-color: #E6A4B4;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.sos-container { 
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
@@ -236,7 +241,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box; */
 }
 
 .subtitle {
