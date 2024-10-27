@@ -223,6 +223,12 @@ body {
         align-items: center;
     }
 
+    .heady {
+        font-size: 30px;
+        margin-left: 0;
+        align-items: center;
+    }
+
     .sos-text{
         font-size:13px;
     }
@@ -254,7 +260,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     width: 300px;
-    width: 60%;
+    height: 350px;
     justify-content: center;
     align-items: center;
 }
@@ -323,12 +329,9 @@ footer {
     color: #E6A4B4;
     padding: 20px 0;
     display: flex;
-    justify-content: space-between; /* Membuat jarak antara copyright dan social icons */
+    justify-content: space-between;
     align-items: center;
     height: 50px;
-    position: relative;
-    z-index: 10;
-    bottom: 0;
     width: 100%;
 }
 
@@ -343,7 +346,7 @@ footer {
 .footer-copyright {
     margin: 0;
     font-size: 15px;
-    color: #d896a9; /* Warna copyright sesuai contoh gambar */
+    color: #d896a9;
 }
 
 .social-foot {
@@ -354,11 +357,11 @@ footer {
 }
 
 .social-foot:hover {
-    transform: scale(1.1); /* Efek zoom saat hover */
+    transform: scale(1.1);
 }
 
 @media (max-width: 600px) {
-    .social-foot{
+    .social-foot {
         width: 20px;
         height: 20px;
     }

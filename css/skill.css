@@ -245,7 +245,7 @@ footer {
     justify-content: space-between; /* Membuat jarak antara copyright dan social icons */
     align-items: center;
     height: 50px;
-    position: relataive;
+    position: absolute;
     z-index: 10;
     bottom: 0;
     width: 100%;
@@ -262,7 +262,7 @@ footer {
 .footer-copyright {
     margin: 0;
     font-size: 15px;
-    color: #d896a9; /* Warna copyright sesuai contoh gambar */
+    color: #d896a9;
 }
 
 .social-foot {
@@ -273,11 +273,11 @@ footer {
 }
 
 .social-foot:hover {
-    transform: scale(1.1); /* Efek zoom saat hover */
+    transform: scale(1.1);
 }
 
 @media (max-width: 600px) {
-    .social-foot{
+    .social-foot {
         width: 20px;
         height: 20px;
     }
